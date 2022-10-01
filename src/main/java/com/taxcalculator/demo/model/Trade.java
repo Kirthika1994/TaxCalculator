@@ -22,10 +22,6 @@ public class Trade {
 		return tradeId;
 	}
 
-	public void setTradeId(int tradeId) {
-		this.tradeId = tradeId;
-	}
-
 	public String getShareName() {
 		return shareName;
 	}
@@ -57,7 +53,7 @@ public class Trade {
 	public void setTotalPrice(double totalPrice) {
 		this.totalPrice = totalPrice;
 	}
-	
+
 	public Trade() {
 	}
 
@@ -69,6 +65,5 @@ public class Trade {
 		this.computedTax = computedTax;
 		this.totalPrice = totalPrice;
 	}
-
 
 }

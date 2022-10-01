@@ -50,7 +50,7 @@ public class Share {
 	public void setTaxRate(float taxRate) {
 		this.taxRate = taxRate;
 	}
-	
+
 	public Share(int shareId, String shareName, double sharePrice, float taxRate) {
 		super();
 		this.shareId = shareId;
@@ -61,7 +61,5 @@ public class Share {
 
 	public Share() {
 	}
-
-	
 
 }
