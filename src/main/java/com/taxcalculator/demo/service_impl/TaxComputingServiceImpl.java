@@ -70,9 +70,9 @@ public class TaxComputingServiceImpl implements TaxComputingService {
 	public Trade getTradebyId(int tradeId) {
 		if (tradesRepository.findById(tradeId).isEmpty()) {
 			throw new NoTradeFoundException();
-		}
+		}else {
 		Trade trade = tradesRepository.findById(tradeId).get();
 		return trade;
-	}
+	}}
 
 }

@@ -1,6 +1,5 @@
 package com.taxcalculator.demo.service_impl;
 
-import static org.junit.Assert.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
@@ -11,8 +10,6 @@ import org.mockito.Mockito;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.taxcalculator.demo.exception.NoTradeFoundException;
-import com.taxcalculator.demo.exception.ShareAlreadyExistsException;
 import com.taxcalculator.demo.repository.SharesRepository;
 import com.taxcalculator.demo.repository.TradesRepository;
 import com.taxcalculator.demo.utils.TestUtils;
@@ -61,7 +58,7 @@ class TaxComputingServiceTest {
 	@Test
 	void test_getTradebyId() {
 		Mockito.when(tradesRepository.findById(1)).thenReturn(TestUtils.getTradeOptional());
-		assertEquals("MS", taxComputingServiceImpl.getTradebyId(1).getShareName());
+		assertEquals("AVIVA", taxComputingServiceImpl.getTradebyId(1).getShareName());
 	}
 
 	@Test
